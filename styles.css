@@ -1,0 +1,87 @@
+/* styles.css */
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(135deg, #f0f0f0 25%, #f8f8f8 100%);
+}
+
+.stopwatch {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 300px;
+}
+
+#display {
+    font-size: 3em;
+    margin: 20px 0;
+    color: #333;
+    font-weight: bold;
+}
+
+.controls button {
+    font-size: 1em;
+    margin: 5px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+}
+
+#startStop {
+    background-color: #28a745;
+    color: white;
+}
+
+#startStop:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+}
+
+#reset {
+    background-color: #dc3545;
+    color: white;
+}
+
+#reset:hover {
+    background-color: #c82333;
+    transform: scale(1.05);
+}
+
+#lap {
+    background-color: #007bff;
+    color: white;
+}
+
+#lap:hover {
+    background-color: #0069d9;
+    transform: scale(1.05);
+}
+
+#laps {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+    text-align: left;
+    max-height: 150px;
+    overflow-y: auto;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+
+#laps li {
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+    font-size: 0.9em;
+}
+
+#laps li:last-child {
+    border-bottom: none;
+}
